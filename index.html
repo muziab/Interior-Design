@@ -5,149 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interkh Interior Design Studio</title>
+    <meta name="description"
+        content="Interkh creates elegant, functional interior spaces tailored to your lifestyle. Explore collections, services, and featured designs.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h2>Interkh</h2>
-        </nav>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Collections</a>
-            <a href="#">Brands</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-
-        </nav>
-        <nav>
-            <i>icon 1</i>
-            <i>icon 2</i>
+    <header class="site-header">
+        <nav class="top-nav">
+            <a class="brand" href="#">Interkh</a>
+            <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                <span></span><span></span><span></span>
+                <span class="sr-only">Toggle navigation menu</span>
+            </button>
+            <div id="main-menu" class="menu-links">
+                <a href="#">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#brands">Brands</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="header-actions">
+                <a href="#" aria-label="Search">⌕</a>
+                <a href="#" aria-label="Shopping cart">🛒</a>
+            </div>
         </nav>
     </header>
-    <main class="sec1">
-        <section class="banner1">
-            <nav>
-                <div>
-                    <img src="img/PIC2.png" alt="">
-                    <p>Unlike generic marketing tools</p>
-                </div>
-            </nav>
-            <nav>
-                <div>
-                    <h1>
-                        Upgrade
-                        Interior
-                        Design
-                    </h1>
-                </div>
-            </nav>
-            <nav>
-                <div>
-                    <img src="img/pic3.png" alt="">
-                    <p>Unlike generic marketing tools</p>
-                </div>
-                <div>
-                    <a class="banner_link" href="#">Start Your Project</a>
-                </div>
-            </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-note">
+                <img src="img/PIC2.png" alt="Decorative interior detail">
+                <p>Curated interiors crafted with timeless details.</p>
+            </div>
+            <div class="hero-copy">
+                <h1>Upgrade Your <span>Interior Design</span></h1>
+                <p>Transform every room into a functional and beautiful living experience with our design experts.</p>
+            </div>
+            <div class="hero-cta">
+                <img src="img/pic3.png" alt="Modern interior inspiration">
+                <a class="btn" href="#contact">Start Your Project</a>
+            </div>
         </section>
-        <section class="banner2">
-            <marquee scrollamount=30 behavior="" direction="none">
-                <p>FURNITURE / INTERIOR / DESIGN </p>
-            </marquee>
+
+        <section class="ticker" aria-label="Design categories">
+            <p>FURNITURE · INTERIOR · DESIGN · RENOVATION · STYLING</p>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-copy">
+                <p class="eyebrow">About Us</p>
+                <h2>Bringing vision and expertise to every project</h2>
+                <p>With Interkh, you get a seamless process, a collaborative design team, and spaces that feel custom-made for your everyday life.</p>
+                <p>From concept and planning to sourcing and final styling, we blend comfort, function, and personality into every corner.</p>
+            </div>
+            <div class="about-images">
+                <img src="img/pic4.png" alt="Living room with warm tones">
+                <img src="img/pic5.png" alt="Textured decor details">
+            </div>
+        </section>
+
+        <section class="showcase" id="brands">
+            <h2>We are Index <img src="img/arrow.png" alt="Arrow icon"></h2>
+            <div class="showcase-grid">
+                <img id="display" src="img/pic6.png" alt="Featured interior project preview">
+                <div class="showcase-content">
+                    <p>Discover our featured projects and inspiration gallery. Click any thumbnail to preview and explore creative combinations for your own home.</p>
+                    <div class="thumbs" aria-label="Project previews">
+                        <img class="click" src="img/pic7.png" alt="Preview project one">
+                        <img class="click" src="img/pic8.png" alt="Preview project two">
+                        <img class="click" src="img/pic9.png" alt="Preview project three">
+                    </div>
+                    <a id="contact_us" href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="collections">
+            <h2>For everything your house desires</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="img/pic11.png" alt="Framed Black and Brown print">
+                    <div>
+                        <p>Framed Black and Brown</p>
+                        <p>$79.00</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="img/pic10.png" alt="Framed Black and Brown print alternative">
+                    <div>
+                        <p>Framed Black and Brown</p>
+                        <p>$79.00</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="img/pic3.png" alt="Framed Black and Brown room styling">
+                    <div>
+                        <p>Framed Black and Brown</p>
+                        <p>$79.00</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
-    <section class="sect1">
-        <div class="s1-col1">
-            <div class="s1-c1-content1">
-                <h3 style="font-size: xx-large;">------------About Us</h3>
-            </div>
-            <div class="s1-c1-content2">
-                <h3>BRINGING VISION AND EXPERTISE TO EVERY PROJECT</h3>
-            </div>
-            <div class="s1-c1-content3">
-                <div>
-                    <p>with us you can expect seamless process, an attractive team, and a design that feels like like it
-                        was made just for you.</p>
-                </div>
-                <div>
-                    <p>with us you can expect seamless process, an attractive team, and a design that feels like like it
-                        was made just for youwith us you can expect seamless process, an attractive team, and a design
-                        that feels like like it was made just for you.</p>
-                    <!-- <p></p> -->
-                </div>
-            </div>
-        </div>
-        <div class="s1-col2">
-            <div class="s1-c2-cont1">
-                <img src="img/pic4.png" alt="">
-            </div>
-            <div class="s1-c2-cont2">
-                <img src="img/pic5.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="sect2">
-        <div>
-            <p>WE ARE <img src="./img/arrow.png" alt=""> INDEX</p>
-        </div>
-        <div>
-            <div>
-                <img id="display" src="./img/pic6.png" alt="">
-            </div>
-            <div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio nostrum eveniet, deserunt
-                        laborum harum sit doloremque minus error, possimus deleniti. A iste deserunt, fugit cupiditate
-                        accusamus quos cumque perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quia neque excepturi veniam impedit ducimus suscipit esse deserunt amet id sed?</p>
-                </div>
-                <div>
-                    <img class="click" src="./img/pic7.png" alt="">
-                    <img class="click" src="./img/pic8.png" alt="">
-                    <img class="click" src="./img/pic9.png" alt="">
-                </div>
-                <div>
-                    <img style="height: 20px; width: 50px;" src="./img/left.png" alt="">
-                    <img style="height: 20px; width: 50px;" src="./img/right.png" alt="">
-                </div>
-                <div>
-                    <a id="contact_us" href="#">CONTACT US</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="sect3">
-        <div>
-            <p id="h1">FOR EVERYTHING YOUR HOUSE DESIRE, REACH OUT TO US AT</p>
-        </div>
-        <div>
-            <div>
-                <img src="img/pic11.png" alt="">
-                <div>
-                    <p>Framed Black And Brown</p>
-                    <p>$79.00</p>
-                </div>
-            </div>
-            <div>
-                <img src="img/pic10.png" alt="">
-                <div>
-                    <p>Framed Black And Brown</p>
-                    <p>$79.00</p>
-                </div>
-            </div>
-            <div>
-                <img src="img/pic3.png" alt="">
-                <div>
-                    <p>Framed Black And Brown</p>
-                    <p>$79.00</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <footer id="contact">
+        <p>Let's design a space you love.</p>
+        <a class="btn" href="mailto:hello@interkh.com">hello@interkh.com</a>
+    </footer>
+
+    <script src="carousel.js"></script>
 </body>
-<script src="carousel.js"></script>
+
 </html>
